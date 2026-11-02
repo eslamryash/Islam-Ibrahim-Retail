@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Islam Ibrahim Retail LLC — curated clothing and accessories.">
+  <title>Islam Ibrahim Retail LLC | Fashion & Accessories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="announcement">COMPLIMENTARY STYLE, EVERY DAY · NEW ARRIVALS JUST DROPPED</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Islam Ibrahim Retail LLC home">
+      <span class="brand-mark">II</span>
+      <span><strong>ISLAM IBRAHIM</strong><small>RETAIL LLC</small></span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#shop">Shop</a><a href="#story">Our story</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-trigger" id="open-cart" aria-label="Open shopping bag">BAG <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEW SEASON EDIT</p>
+        <h1>Make room<br>for <em>remarkable.</em></h1>
+        <p class="hero-description">Considered essentials. Distinctive details. A fresh point of view on everyday style.</p>
+        <a class="gold-button" href="#shop">EXPLORE THE COLLECTION <span>↗</span></a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Fashion editorial image">
+        <div class="hero-image-overlay"></div>
+        <div class="image-caption">THE ART OF EVERYDAY STYLE <span>01 / 04</span></div>
+      </div>
+      <div class="hero-side-note">CURATED FOR YOUR EVERY DAY — EST. 2026</div>
+    </section>
+
+    <section class="trust-strip">
+      <span>✦ THOUGHTFUL PICKS</span><span>✦ EASY ORDERING</span><span>✦ PERSONAL SERVICE</span>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">FIND YOUR SIGNATURE</p><h2>The collection</h2></div>
+        <p>Pieces that feel like you.<br>Made to move with you.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All pieces</button>
+        <button class="filter" data-category="Clothing">Clothing</button>
+        <button class="filter" data-category="Shoes">Shoes</button>
+        <button class="filter" data-category="Bags">Bags</button>
+        <button class="filter" data-category="Accessories">Accessories</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="editorial" id="story">
+      <div class="editorial-image"></div>
+      <div class="editorial-copy">
+        <p class="eyebrow">A MORE PERSONAL KIND OF STYLE</p>
+        <h2>Details make<br>the difference.</h2>
+        <p>Islam Ibrahim Retail LLC brings together clothing and accessories selected for modern everyday expression. Discover versatile pieces, considered details and a shopping experience built around you.</p>
+        <a href="#shop" class="text-link">DISCOVER THE EDIT <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-main">
+      <div class="brand footer-brand"><span class="brand-mark">II</span><span><strong>ISLAM IBRAHIM</strong><small>RETAIL LLC</small></span></div>
+      <div><p class="eyebrow">GET IN TOUCH</p><p>Questions about an item or an order?</p><a id="footer-whatsapp" class="text-link" href="#">CHAT WITH US ↗</a></div>
+      <div><p class="eyebrow">EXPLORE</p><a href="#shop">Shop all</a><a href="#story">Our story</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> ISLAM IBRAHIM RETAIL LLC</span><span>STYLE, WITH INTENTION.</span></div>
+  </footer>
+
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="cart-header"><div><p class="eyebrow">YOUR SELECTION</p><h2>Shopping bag</h2></div><button id="close-cart" class="close-button" aria-label="Close bag">×</button></div>
+    <div id="cart-items" class="cart-items"><p class="empty-cart">Your bag is waiting for something special.</p></div>
+    <div class="cart-footer">
+      <div class="subtotal"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+      <p class="fine-print">Shipping and taxes are confirmed when your order is arranged.</p>
+      <button class="gold-button full" id="whatsapp-checkout">ORDER VIA WHATSAPP ↗</button>
+      <button class="outline-button full" id="stripe-checkout">PAY BY CARD WITH STRIPE</button>
+      <p class="fine-print center">Card payments are securely processed by Stripe. We never store your card details.</p>
+      <p class="setup-note" id="checkout-note"></p>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/config.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
